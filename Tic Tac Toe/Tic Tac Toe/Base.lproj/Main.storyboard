@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,96 +17,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-uy-1W1">
-                                <rect key="frame" x="20" y="249" width="374" height="398"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="RL5-jc-ebv">
+                                <rect key="frame" x="20" y="238" width="374" height="398"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="qeK-Ei-pTo">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="z3H-NC-8pm">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="132"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j1-LQ-lf0" userLabel="upperLeft">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QD-MF-lrK" userLabel="upperLeft">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="132"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                                <state key="normal" title="X"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <state key="normal" title="X">
+                                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MX4-6q-Cqh"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33z-Ra-7Tj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-XR-6QM" userLabel="upperMiddle">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZS5-78-DDj" userLabel="upperMiddle">
                                                 <rect key="frame" x="155" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1l-La-PQ7"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWS-01-LFk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APV-07-rb4" userLabel="upperRight">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slM-jH-2yf" userLabel="upperRight">
                                                 <rect key="frame" x="310" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B2u-VF-GAH"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dA2-gs-kx0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="blankBoard" translatesAutoresizingMaskIntoConstraints="NO" id="HLj-2w-VxP">
-                                        <rect key="frame" x="0.0" y="133" width="374" height="271"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-8H-zj3">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="uJr-NB-X1g">
                                         <rect key="frame" x="0.0" y="133" width="374" height="132"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gy-N9-Zvn" userLabel="middleLeft">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYa-te-WfZ" userLabel="middleLeft">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhw-Wv-njn"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCB-YZ-zRw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUU-kL-ohO" userLabel="middle">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meq-Lc-8FI" userLabel="middle">
                                                 <rect key="frame" x="155" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xV8-1x-rZ7"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjY-Gz-cJC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UL9-35-afa" userLabel="middleRight">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jaf-Tj-nzS" userLabel="middleRight">
                                                 <rect key="frame" x="310" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hg-dl-nzh"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vUQ-aZ-zRX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-fY-YYz">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="F0q-rc-VuV">
                                         <rect key="frame" x="0.0" y="266" width="374" height="132"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-ii-44Q" userLabel="bottomLeft">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMe-DI-Zqf" userLabel="bottomLeft">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aa8-OW-H0A"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhu-xG-bMe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yL-fE-LFn" userLabel="bottomMiddle">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6w-RI-szt" userLabel="bottomMiddle">
                                                 <rect key="frame" x="155" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RdJ-9z-0y2"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tq0-wB-ZEm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-iq-ilT" userLabel="bottomRight">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Y-2Q-2Y7" userLabel="bottomRight">
                                                 <rect key="frame" x="310" y="0.0" width="64" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
-                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10U-zu-RJE"/>
+                                                    <action selector="theButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3c-hx-tDY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -115,22 +114,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Sma-uy-1W1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W7F-0I-dp7"/>
-                            <constraint firstItem="Sma-uy-1W1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnR-y9-Is6"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outletCollection property="theButtonsObject" destination="0j1-LQ-lf0" collectionClass="NSMutableArray" id="Uu2-dA-OBa"/>
-                        <outletCollection property="theButtonsObject" destination="dcy-XR-6QM" collectionClass="NSMutableArray" id="kgA-j6-5vY"/>
-                        <outletCollection property="theButtonsObject" destination="APV-07-rb4" collectionClass="NSMutableArray" id="WuG-70-zop"/>
-                        <outletCollection property="theButtonsObject" destination="UL9-35-afa" collectionClass="NSMutableArray" id="ip9-JL-bpi"/>
-                        <outletCollection property="theButtonsObject" destination="WUU-kL-ohO" collectionClass="NSMutableArray" id="XSa-qZ-2cZ"/>
-                        <outletCollection property="theButtonsObject" destination="9Gy-N9-Zvn" collectionClass="NSMutableArray" id="Nf7-kY-3w3"/>
-                        <outletCollection property="theButtonsObject" destination="h2i-iq-ilT" collectionClass="NSMutableArray" id="IJM-tx-IaP"/>
-                        <outletCollection property="theButtonsObject" destination="6yL-fE-LFn" collectionClass="NSMutableArray" id="meP-t1-2ho"/>
-                        <outletCollection property="theButtonsObject" destination="QX3-ii-44Q" collectionClass="NSMutableArray" id="X2D-RU-k7B"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +122,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blankBoard" width="350" height="271"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

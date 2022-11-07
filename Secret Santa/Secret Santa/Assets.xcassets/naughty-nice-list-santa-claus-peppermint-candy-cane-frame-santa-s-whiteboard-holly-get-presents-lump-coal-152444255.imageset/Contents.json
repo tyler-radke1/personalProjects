@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "naughty-nice-list-santa-claus-peppermint-candy-cane-frame-santa-s-whiteboard-holly-get-presents-lump-coal-152444255.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

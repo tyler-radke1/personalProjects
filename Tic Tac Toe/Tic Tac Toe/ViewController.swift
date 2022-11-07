@@ -16,16 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
 
-    override func viewWillAppear() {
-        super.viewWillAppear(animated)
-        
-        for button in theButtonsObject {
-            button.setTitle("", for: UIControl.State.Normal)
-        }
-        
-    }
+   
     
     @IBAction func theButtonsPressed(_ sender: UIButton) {
         
